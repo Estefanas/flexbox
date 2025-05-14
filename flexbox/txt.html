@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(247, 97, 202);
+    text-align: center;
+}
+
+.cabeçalho{
+    background-color: #88a201;
+    height: 100px;
+}
+
+.setinha{
+    color: black;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 20px;
+}
+
+.foto-usuario {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nome-usuario {
+    font-size: 20px;
+    margin-left: 15px;
+    color: rgb(255, 214, 243);
+}
+
+
+.conteudo {
+    max-width: 800px;
+    margin: auto;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.filme, .serie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagem-filme, .imagem-serie {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.filme:hover .imagem-filme {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(243, 166, 204);
+}
+
+.serie:hover .imagem-serie {
+    transform: rotate(5deg);
+    box-shadow: 0 0 10px rgb(248, 180, 214);
+}
+
+
+.titulo {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+        <div class = "cabeçalho">
+                <div class="perfil">
+                    <p class="nome-usuario">Nome do Usuário:</p>
+                    <img class="foto-usuario" src="Design sem nome.jpg" alt="Foto do usuário">
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+    <div class="conteudo">
+        <h2>Filmes e Séries Disponíveis</h2>
+        <div class="lista">
+            
+            <div class="filme">
+                <img class="imagem-filme" src="Design sem nome.jpg" alt="Filme">
+                <p class="titulo">Título do Filme</p>
+            </div>
+            
+            <div class="filme">
+                <img class="imagem-filme" src="Design sem nome.jpg" alt="Filme">
+                <p class="titulo">Título do Filme</p>
+            </div>
+            <div class="filme">
+                <img class="imagem-filme" src="Design sem nome.jpg" alt="Filme">
+                <p class="titulo">Título do Filme</p>
+            </div>
+            
+
+            <img class = "setinha" src = "image.png">
+        
+            <div class="serie">
+                <img class="imagem-serie" src="Design sem nome.jpg" alt="Série">
+                <p class="titulo">Título da Série</p>
+            </div>
+            <div class="serie">
+                <img class="imagem-serie" src="Design sem nome.jpg" alt="Série">
+                <p class="titulo">Título da Série</p>
+            </div>
+            <div class="serie">
+                <img class="imagem-serie" src="Design sem nome.jpg" alt="Série">
+                <p class="titulo">Título da Série</p>
+            </div>
+            
+            <img class = "setinha" src = "image.png">
+        </div>
+    </div>
+
+</body>
+</html>
+
